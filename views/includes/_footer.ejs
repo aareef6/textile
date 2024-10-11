@@ -1,0 +1,201 @@
+<!--/footer-->
+<footer class="w3l-footer">
+    <div class="w3l-footer-16 py-5">
+        <div class="container py-md-5 py-3">
+            <div class="row footer-p">
+                <div class="col-lg-5 pe-lg-5">
+                    <h2 class="footerw3l-logo"><a class="navbar-brand" href="/">
+                            Knit<span class="log">ting</span>
+                        </a></h2>
+                    <p class="footerw3-para">Lorem ipsum viverra feugiat. .</p>
+                </div>
+                <div class="col-lg-7 mt-lg-0 mt-sm-5 mt-4">
+                    <h3>Newsletter</h3>
+                    <div class="end-column">
+                        <form action="#" class="subscribe d-sm-flex" method="post">
+                            <input type="email" name="email" placeholder="Email Address" required="">
+                            <button class="btn btn-primary"> Subscribe</button>
+                        </form>
+                        <p class="mt-4">Subscribe to our mailing list and get updates to your email inbox.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-p pt-lg-4">
+                <div class="col-lg-3 col-md-6 pe-xl-5 pe-lg-4 mt-sm-5 mt-4">
+                    <div class="column">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+(21) 255 088 4943">+(21) 255 088 4943</a></p>
+                    </div>
+
+                    <div class="column mt-md-5 mt-4">
+                        <h3>Address </h3>
+                        <p>Pixshot, Honey Street,Main Road
+                            London, UK - 49436.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 pe-xl-5 pe-lg-4 mt-sm-5 mt-4">
+
+                    <div class="column">
+                        <h3>Support</h3>
+                        <p><a href="mailto:finagenc@mail.com" class="mail">pixshot@mail.com</a></p>
+                    </div>
+                    <div class="column mt-md-5 mt-4">
+                        <h3>Follow</h3>
+                        <ul class="social">
+                            <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 pe-xl-5 pe-lg-4 mt-sm-5 mt-4">
+                    <h3>Our Links</h3>
+                    <ul class="footer-gd-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About
+                            </a></li>
+                        <li><a href="/services">Services</a>
+                        </li>
+                        <li><a href="#gallery">Gallery</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="/contact">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 pe-xl-5 pe-lg-4 mt-sm-5 mt-4">
+                    <h3>Working Hours</h3>
+                    <ul class="timingsw3">
+                        <li>Tue-Sat: 6 PM – 4 AM
+                        </li>
+                        <li class="my-3">Sunday: 6 PM – 2 AM
+                        </li>
+                        <li>Monday: Closed
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="below-section pt-4 mt-5">
+                <div class="row">
+
+                    <p class="copy-text col-lg-7">&copy; 2022 Pixshot. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank"> Student</a>
+                    </p>
+                    <div class="col-lg-5 w3footer-gd-links d-flex">
+
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms" class="mx-3">Terms of service</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+<!--/Js-scripts-->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fas fa-long-arrow-alt-up" aria-hidden="true"></span>
+</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
+<!-- //move-top-->
+<!-- Template JavaScript -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/theme-change.js"></script>
+
+<!-- MENU-JS -->
+<script>
+    $(window).on("scroll", function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function() {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function() {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+
+</script>
+<!-- //MENU-JS -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function() {
+        $('.navbar-toggler').click(function() {
+            $('body').toggleClass('noscroll');
+        })
+    });
+
+</script>
+<!-- //disable body scroll which navbar is in active -->
+
+<!-- //bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleContent(contentId, element) {
+            const content = document.getElementById(contentId);
+            const arrow = element.querySelector('.arrow');
+
+            // Toggle display
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                arrow.innerHTML = '&#9650;'; // Up arrow
+                arrow.classList.add('up'); // Add rotation class
+            } else {
+                content.style.display = "none";
+                arrow.innerHTML = '&#9660;'; // Down arrow
+                arrow.classList.remove('up'); // Remove rotation class
+            }
+        }
+    </script>
+</body>
+
+</html>
